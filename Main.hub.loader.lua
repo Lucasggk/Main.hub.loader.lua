@@ -5,5 +5,5 @@ if gameId == 537413528 then
 elseif gameId == 116495829188952 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Lucasggk/Fluentplus/main/Loader.lua", true))()
 else
-    print("jogo sem script ainda)
+    print("jogo sem script ainda")
 end
