@@ -10,7 +10,7 @@ if gameId == 537413528 then
     loadstring(tab[1])()
 elseif gameId == 70876832253163 or gameId == 116495829188952 then
     loadstring(tab[2])()
-elseif gameId == 00 then
+elseif gameId == 3101667897 then
     loadstring(tab[3])()
 elseif gameId == 16331984995 then
     loadstring(tab[1])()
