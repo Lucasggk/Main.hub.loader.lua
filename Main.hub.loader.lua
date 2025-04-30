@@ -1,12 +1,11 @@
 local gameId = game.PlaceId
-IDs = [
+local IDs = {
     537413528,
     70876832253163,
     116495829188952,
     3101667897,
     16331984995
-]
-
+}
     
 if gameId == IDs then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Lucasggk/Fluentplus-buildaboat/main/Loader.lua", true))()
