@@ -1,19 +1,13 @@
 local gameId = game.PlaceId
-local IDs = {
-    537413528,
-    70876832253163,
-    116495829188952,
-    3101667897,
-    16331984995
-}
+
     
-if gameId == IDs then
+if gameId == 537413528 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Lucasggk/Fluentplus-buildaboat/main/Loader.lua", true))()
-elseif gameId == IDs then 
+elseif gameId == 70876832253163 or 116495829188952  then 
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Lucasggk/Fluentplus-DeadRails-/main/Loader.lua", true))()
-elseif gameId == IDs then
+elseif gameId == 3101667897 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Lucasggk/Fluentplus-LegendsSpeed/main/Loader.lua", true))()
-elseif gameId == IDs then
+elseif gameId == 16331984995 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Lucasggk/Fluentplus-buildaboat/main/Loader.lua", true))()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Lucasggk/Fluentplus-DeadRails-/main/Loader.lua", true))()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Lucasggk/Fluentplus-LegendsSpeed/main/Loader.lua", true))()
