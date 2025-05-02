@@ -27,7 +27,7 @@ local Window = Fluent:CreateWindow({
 SaveManager:SetLibrary(Fluent)
 InterfaceManager:SetLibrary(Fluent)
 SaveManager:IgnoreThemeSettings()
-InterfaceManager:BuildInterfaceSection(Tab)
+
     
 
 local key = Window:AddTab({
@@ -40,6 +40,8 @@ local config = Window:AddTab({
     Icon = "settings"
   })
 
+InterfaceManager:BuildInterfaceSection(config)
+    
 keys = "" 
 
 local Input = key:AddInput("", {
