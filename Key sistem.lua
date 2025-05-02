@@ -105,10 +105,19 @@ keyTab:AddButton({
     Title = "Verificar Key",
     Callback = function()
         if user_input_key == correct_key then
+                
             saveKey(user_input_key)
+                
+            Fluent:Notify({
+            Title = "Key Correta",
+            Content = "A key foi salva, o script abre em 3 segundos",
+            Duration = 3 })
+                        
             task.wait(3)
+                        
             Fluent:Destroy()
             loadstring(game:HttpGet("https://raw.githubusercontent.com/Lucasggk/hub/main/Main.hub.loader.lua", true))()
+                        
         else
             Fluent:Notify({
                 Title = "Erro",
@@ -142,6 +151,10 @@ keyTab:AddParagraph({
 })
 
 if isKeySaved() and autoLoadEnabled then
+    Fluent:Notify({
+    Title = "key salva",
+    Content = "Espere 3 segundos para o script\n você pode deletar a key salva qualquer hora!",
+    Duration = 3 })
     task.wait(3)
     Fluent:Destroy()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Lucasggk/hub/main/Main.hub.loader.lua", true))()
