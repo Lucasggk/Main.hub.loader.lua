@@ -3,7 +3,7 @@
 repeat task.wait() until game:IsLoaded()
 repeat task.wait() until game.Players.LocalPlayer:FindFirstChild("PlayerGui")
 
-
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Lucasggk/hub/main/GameId.lua", true))()
 
 if table.find(IDs, game.PlaceId) then
 
