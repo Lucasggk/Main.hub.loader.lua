@@ -30,3 +30,17 @@ local config = Window:AddTab({
     Icon = "settings"
   })
 
+keys = "" 
+
+local Input = key:AddInput("", {
+        Title = "Input your key",
+        Default = "",
+        Placeholder = "key",
+        Numeric = false, 
+        Finished = false,
+        Callback = function(Value)
+            keys = tostring(value)
+        end
+    })
+
+
