@@ -52,16 +52,18 @@ link_key = tostring("key(isto tudo e uma key so copia e põe lá)")
 key:AddButton({ 
   Title = "check key",
   Callback = function()
-   if keys == link_key then
-    print("key correta")
-    task.wait(1)
-    Library:Destroy()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Lucasggk/hub/main/Main.hub.loader.lua", true))()
-   else
-    print("key errado")
-   end
+    if keys == link_key then
+      print("key correta")
+      task.wait(1)
+      Library:Destroy()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/Lucasggk/hub/main/Main.hub.loader.lua", true))()
+    else
+      print("key errado")
+    end
   end
- })
+})
+    
+
 
 key:AddButton({
   Title = "Get key",
