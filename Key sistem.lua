@@ -7,7 +7,10 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Lucasggk/hub/main/Gam
 
 if table.find(IDs, game.PlaceId) then
 local Fluent = loadstring(Game:HttpGet("https://raw.githubusercontent.com/discoart/FluentPlus/refs/heads/main/release.lua", true))() 
-
+    
+local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
+InterfaceManager:SetLibrary(Fluent)
+    
 local Window = Fluent:CreateWindow({
     Title = "System key",
     SubTitle = "sistema de key by Lucas",
@@ -28,6 +31,7 @@ local config = Window:AddTab({
     Title = "config",
     Icon = "settings"
 })
+InterfaceManager:BuildInterfaceSection(config)
 
 keys = ""
 link_key = "key(isto tudo e uma key so copia e põe lá)"
