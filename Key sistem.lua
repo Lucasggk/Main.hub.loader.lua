@@ -8,7 +8,8 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Lucasggk/hub/main/Gam
 if table.find(IDs, game.PlaceId) then
 
 local Fluent = loadstring(Game:HttpGet("https://raw.githubusercontent.com/discoart/FluentPlus/refs/heads/main/release.lua", true))() 
-
+local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
+local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
 
 
 
@@ -23,6 +24,11 @@ local Window = Fluent:CreateWindow({
     IsDraggable = true
 })
 
+SaveManager:SetLibrary(Fluent)
+InterfaceManager:SetLibrary(Fluent)
+SaveManager:IgnoreThemeSettings()
+InterfaceManager:BuildInterfaceSection(Tab)
+    
 
 local key = Window:AddTab({
     Title = "system key",
@@ -47,20 +53,33 @@ local Input = key:AddInput("", {
     end
 })
 
+
+
+SaveManager:SetPath("KeySystem/" .. game.PlaceId)
+local savedKey = SaveManager:Load("LastValidKey")
+
+if savedKey then
+    Input:SetText(savedKey)
+    keys = savedKey
+    end
+    
+
+    
 link_key = tostring("key(isto tudo e uma key so copia e põe lá)")
 
 key:AddButton({ 
   Title = "check key",
   Callback = function()
     if keys == link_key then
-      print("key correta")
-      task.wait(1)
+      SaveManager:SetPath("KeySystem/" .. game.PlaceId)
+      SaveManager:Save("LastValidKey", keys)
+      task.wait(0.5)
       Library:Destroy()
       loadstring(game:HttpGet("https://raw.githubusercontent.com/Lucasggk/hub/main/Main.hub.loader.lua", true))()
     else
       print("key errado")
     end
-  end
+end
 })
     
 
@@ -72,6 +91,14 @@ key:AddButton({
   end
  })
 
+
+
+
+
+    
+
+
+    
 key:AddParagraph({
   Title = "A KEY SEMPRE SERÁ A MESMA!"
  })
