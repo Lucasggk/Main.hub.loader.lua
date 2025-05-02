@@ -31,3 +31,7 @@ a:AddParagraph({
 
 local section = a:AddSection("jogos com suporte: ")
 
+a:AddParagraph({
+    Title = "Jogos com suporte",
+    Content = "Blox Fruits (Sea 1, 2, 3)\nDead Rails\nLegends of Speed\nBuild A Boat"
+})
