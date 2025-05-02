@@ -47,7 +47,7 @@ local Input = key:AddInput("", {
     end
 })
 
-link_key = tostring("https://link-center.net/1345506/sistema-de-key-scripts")
+link_key = tostring("key(isto tudo e uma key so copia e põe lá)")
 
 key:AddButton({ 
   Title = "check key",
