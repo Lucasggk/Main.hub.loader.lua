@@ -56,7 +56,7 @@ key:AddButton({
     print("key correta")
     task.wait(1)
     Library:Destroy()
-    
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Lucasggk/hub/main/Main.hub.loader.lua", true))()
    else
     print("key errado")
    end
