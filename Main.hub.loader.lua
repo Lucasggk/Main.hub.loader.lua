@@ -1,7 +1,7 @@
 local gameId = game.PlaceId
 
 
-local IDs = loadstring(game:HttpGet("https://raw.githubusercontent.com/Lucasggk/hub/main/GameId.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Lucasggk/hub/main/GameId.lua"))()
 
 
     
@@ -13,7 +13,7 @@ elseif gameId == 70876832253163 or gameId == 116495829188952 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Lucasggk/Fluentplus-DeadRails/main/Loader.lua", true))()
 
     
-elseif gameId == 3101667897 then
+elseif table.find(IDs, gameId) then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Lucasggk/Fluentplus-LegendsSpeed/main/Loader.lua", true))()
 
 
