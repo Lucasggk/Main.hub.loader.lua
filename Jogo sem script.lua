@@ -1,1 +1,3 @@
+gameId = game.PlaceId 
+
 
