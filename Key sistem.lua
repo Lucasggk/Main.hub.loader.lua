@@ -33,16 +33,17 @@ local config = Window:AddTab({
 keys = "" 
 
 local Input = key:AddInput("", {
-        Title = "Input your key",
-        Default = "",
-        Placeholder = "key",
-        Numeric = false, 
-        Finished = false,
-        Callback = function(Value)
-            keys = tostring(value)
-            wait(0.1)
-            print(keys)
-        end
-    })
+    Title = "Input your key",
+    Default = "",
+    Placeholder = "key",
+    Numeric = false, 
+    Finished = false,
+    Callback = function(Value)
+        keys = tostring(Value)
+    end
+})
+
+
+
 
 
