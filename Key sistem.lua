@@ -77,10 +77,19 @@ key:AddButton({
         })
     end
 })
+key:AddParagraph({
+    Title = "sistema de key em desenvolvimento"
+                        Content = "Em breve ele armazenará sua key"
+})
 
+        
 key:AddParagraph({
     Title = "A KEY SEMPRE SERÁ A MESMA!"
 })
+
+
+
+        
 else
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Lucasggk/hub/main/Jogo%20sem%20script.lua", true))()
 end
