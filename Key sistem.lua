@@ -40,6 +40,8 @@ local Input = key:AddInput("", {
         Finished = false,
         Callback = function(Value)
             keys = tostring(value)
+            wait(0.1)
+            print(keys)
         end
     })
 
