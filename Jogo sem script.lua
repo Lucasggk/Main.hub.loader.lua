@@ -24,5 +24,5 @@ local a = Window:AddTab({
 
 a:AddParagraph({
     Title = "jogo sem suporte",
-    Description = "Id atual: ".. Gameid,
+    Description = string.format("Id do Jogo: ".. gameId)
   })
