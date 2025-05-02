@@ -47,6 +47,11 @@ local Input = key:AddInput("", {
 key:AddButton({ 
   Title = "check key",
   Callback = function()
+   if keys == "oi" then
+    print("key correta")
+   else
+    print("key errado")
+   end
   end
  })
 
