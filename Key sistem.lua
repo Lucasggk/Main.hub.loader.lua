@@ -22,7 +22,7 @@ local Window = Fluent:CreateWindow({
 
 local key = Window:AddTab({
     Title = "system key",
-    Icon = "rbxassetid://82921915559088"
+    Icon = "rbxassetid://95214531579570"
   })
 
 local config = Window:AddTab({
