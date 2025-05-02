@@ -43,12 +43,14 @@ local Input = key:AddInput("", {
     end
 })
 
+link_key = tostring("https://link-center.net/1345506/sistema-de-key-scripts")
 
 key:AddButton({ 
   Title = "check key",
   Callback = function()
-   if keys == "oi" then
+   if keys == link_key then
     print("key correta")
+    Destroy(Window)
    else
     print("key errado")
    end
@@ -62,6 +64,8 @@ key:AddButton({
   end
  })
 
-
+key:AddParagraph({
+  Title = "A KEY SEMPRE SERÁ A MESMA!"
+ })
 
 
