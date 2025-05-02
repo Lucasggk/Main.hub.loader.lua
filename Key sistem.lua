@@ -79,7 +79,7 @@ key:AddButton({
 })
 key:AddParagraph({
     Title = "sistema de key em desenvolvimento"
-                        Content = "Em breve ele armazenará sua key"
+                        Content = "Em breve ele armazenará sua key/nSou apenas um mini dev, entao talvez não sera tão rápido/nQue o sistema de key fica 100% pronto"
 })
 
         
