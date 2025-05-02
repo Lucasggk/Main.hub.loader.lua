@@ -82,8 +82,7 @@ key:AddParagraph({
 
 else
 
-
-
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Lucasggk/hub/main/Jogo%20sem%20script.lua", true))()
 
 end
 
