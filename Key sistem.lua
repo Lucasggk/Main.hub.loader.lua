@@ -54,7 +54,7 @@ key:AddButton({
     Callback = function()
         if keys == link_key then
             task.wait(0.5)
-            Window:Destroy()
+            Fluent:Destroy()
             loadstring(game:HttpGet("https://raw.githubusercontent.com/Lucasggk/hub/main/Main.hub.loader.lua", true))()
         else
             Fluent:Notify({
