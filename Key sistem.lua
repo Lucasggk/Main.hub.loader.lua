@@ -50,7 +50,8 @@ key:AddButton({
   Callback = function()
    if keys == link_key then
     print("key correta")
-    Destroy(Window)
+    task.wait(1)
+    Library:Destroy()
    else
     print("key errado")
    end
