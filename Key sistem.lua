@@ -11,7 +11,7 @@ if not table.find(IDs, game.PlaceId) then
 end
 
 
-local correct_key = key(isto tudo e uma key so copia e põe lá)
+local correct_key = "key(isto tudo e uma key so copia e põe lá)"
 
 local function isKeySaved()
     if not isfile("FluentUI_KeySystem.txt") then return false end
