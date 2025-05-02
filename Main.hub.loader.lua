@@ -1,11 +1,7 @@
 local gameId = game.PlaceId
 
 
-local seas = {
-    2753915549, -- Sea 1
-    4442272183, -- Sea 2
-    7449423635  -- Sea 3
-}
+loadstring(game:HttpGet("", true))()
 
 
     
@@ -21,7 +17,7 @@ elseif gameId == 3101667897 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Lucasggk/Fluentplus-LegendsSpeed/main/Loader.lua", true))()
 
 
-elseif table.find(seas, game.PlaceId) then
+elseif table.find(IDs, gameId) then
     loadstring(Game:HttpGet("https://raw.githubusercontent.com/Lucasggk/Fluentplus-bloxfruits/main/Loader.lua", true))()
     
 elseif gameId == 16331984995 then
