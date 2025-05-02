@@ -1,7 +1,7 @@
 local gameId = game.PlaceId
 
 
-loadstring(game:HttpGet("", true))()
+local IDs = loadstring(game:HttpGet("https://raw.githubusercontent.com/Lucasggk/hub/main/GameId.lua"))()
 
 
     
