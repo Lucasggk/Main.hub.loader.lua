@@ -27,7 +27,7 @@ elseif gameId == table.find(IDs, gameId) then
     loadstring(Game:HttpGet("https://raw.githubusercontent.com/Lucasggk/Fluentplus-bloxfruits/main/Loader.lua", true))()
     
 else
-    print("jogo sem script ainda")
+    
 
 
     
