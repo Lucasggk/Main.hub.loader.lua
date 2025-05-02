@@ -27,6 +27,6 @@ local key = Window:AddTab({
 
 local config = Window:AddTab({
     Title = "config",
-    Icon = "Settings"
+    Icon = "settings"
   })
 
