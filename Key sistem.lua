@@ -2,7 +2,11 @@
 
 repeat task.wait() until game:IsLoaded()
 repeat task.wait() until game.Players.LocalPlayer:FindFirstChild("PlayerGui")
- 
+
+
+
+if table.find(IDs, game.PlaceId) then
+
 local Fluent = loadstring(Game:HttpGet("https://raw.githubusercontent.com/discoart/FluentPlus/refs/heads/main/release.lua", true))() 
 
 
@@ -69,4 +73,17 @@ key:AddParagraph({
   Title = "A KEY SEMPRE SERÁ A MESMA!"
  })
 
+
+
+
+
+
+
+
+else
+
+
+
+
+end
 
