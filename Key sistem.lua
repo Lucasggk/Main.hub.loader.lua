@@ -56,6 +56,7 @@ key:AddButton({
     print("key correta")
     task.wait(1)
     Library:Destroy()
+    
    else
     print("key errado")
    end
