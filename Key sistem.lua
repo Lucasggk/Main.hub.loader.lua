@@ -2,8 +2,33 @@
 
 repeat task.wait() until game:IsLoaded()
 repeat task.wait() until game.Players.LocalPlayer:FindFirstChild("PlayerGui")
+link_key = "key(isto tudo e uma key so copia e põe lá)"
+_Getgenv().key = ""
+jogo = 0
+
+
+
+
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Lucasggk/hub/main/GameId.lua", true))()
+if table.find(IDs, game.PlaceId) then 
+    jogo = jogo + 1
+else
+    jogo = 0 
+end
+
+if jogo == 1 and _g().key == tostring("key(isto tudo e uma key so copia e põe lá)") then
+      Window:Destroy()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/Lucasggk/hub/main/Main.hub.loader.lua", true))()
+end  
+        
+
+
+
+
+
+
+
 
 if table.find(IDs, game.PlaceId) then
 local Fluent = loadstring(Game:HttpGet("https://raw.githubusercontent.com/discoart/FluentPlus/refs/heads/main/release.lua", true))() 
@@ -34,7 +59,7 @@ local config = Window:AddTab({
 InterfaceManager:BuildInterfaceSection(config)
 
 keys = ""
-link_key = "key(isto tudo e uma key so copia e põe lá)"
+
 
 local Input = key:AddInput("KeyInput", {
     Title = "Input your key",
