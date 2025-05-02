@@ -1,3 +1,5 @@
+--// usados pro sistema de key apenas
+
 IDs = {
   2753915549,
   4442272183,
