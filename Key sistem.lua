@@ -44,6 +44,19 @@ local Input = key:AddInput("", {
 })
 
 
+key:AddButton({ 
+  Title = "check key",
+  Callback = function()
+  end
+ })
+
+key:AddButton({
+  Title = "Get key",
+  Callback = function()
+   setclipboard("https://link-center.net/1345506/sistema-de-key-scripts")
+  end
+ })
+
 
 
 
